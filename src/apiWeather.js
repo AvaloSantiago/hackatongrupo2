@@ -20,8 +20,8 @@ export const getWeather = async (lat, lon) => {
             lat,
             lon,
             units: 'metric',
+            appid: API_KEY,  // Incluye el appid en la solicitud
         },
     });
     return response.data;
 };
-
