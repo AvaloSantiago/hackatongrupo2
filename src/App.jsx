@@ -7,7 +7,7 @@ import MapComponent from './components/Map';
 function App() {
     const [airQuality, setAirQuality] = useState(null);
     const [weather, setWeather] = useState(null);
-    const [location, setLocation] = useState({ lat: 40.7128, lon: -74.0060 }); // Coordenadas iniciales
+    const [location, setLocation] = useState({ lat: 40.7128, lon: -74.0060 });
 
     useEffect(() => {
       const fetchData = async () => {
